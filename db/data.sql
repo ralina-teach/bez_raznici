@@ -1,16 +1,15 @@
--- Data only dump. Apply after create_v1.sql in an empty database.
 USE `bez_raznici`;
 
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!50503 SET NAMES utf8mb4 */;
-/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
-/*!40103 SET TIME_ZONE='+00:00' */;
-/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
-/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
-/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
-/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT;
+SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS;
+SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION;
+SET NAMES utf8mb4;
+SET @OLD_TIME_ZONE=@@TIME_ZONE;
+SET TIME_ZONE='+00:00';
+SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
+SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
+SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO';
+SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0;
 
 INSERT INTO `categories` VALUES (1,'Женская обувь'),(2,'Мужская обувь');
 
@@ -31,13 +30,12 @@ INSERT INTO `roles` VALUES (1,'Администратор'),(2,'Менеджер
 INSERT INTO `suppliers` VALUES (1,'Kari'),(2,'Обувь для нас');
 
 INSERT INTO `users` VALUES (1,'Каримов Рамиль Русланович','supersus@gmail.com','ss6767',1),(2,'Подзолов Руслан Германович','meow@gmail.com','mabooy',1),(3,'Изоньяров Герман Артёмович','flabebe@gmail.com','egegey',1),(4,'Кунташов Михаил Гарипович','uuumeffeee@gmail.com','sub0op',2),(5,'Соснов Вадим Рустемович','kanto@gmail.com','sosnov',2),(6,'Денисова Елена Павловна','eeeee@gmail.com','eeeeee',2),(7,'Рыбаков Борис Афансьевич','sosnoviishishechko@gmail.com','grmonda',3),(8,'Минсабирова Ралина Олеговна','oleg@gmail.com','sixsev',3),(9,'Парагманов Амир Батырович','gaidulyanbro@gmail.com','10037o',3),(10,'Сигмов Азамат Криперович','azamatpro@gmail.com','saaass',3);
-/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+SET TIME_ZONE=@OLD_TIME_ZONE;
 
-/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
-/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
-/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
-
+SET SQL_MODE=@OLD_SQL_MODE;
+SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
+SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT;
+SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS;
+SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION;
+SET SQL_NOTES=@OLD_SQL_NOTES;

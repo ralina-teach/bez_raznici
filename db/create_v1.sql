@@ -1,18 +1,12 @@
--- MySQL Workbench Forward Engineering. Модель bez_raznici.mwb.
-
 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
 
 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
 
 SET NAMES utf8mb4;
 
--- Schema bez_raznici
-
 CREATE SCHEMA IF NOT EXISTS `bez_raznici`;
 
 USE `bez_raznici`;
-
--- Table categories
 
 CREATE TABLE IF NOT EXISTS `bez_raznici`.`categories` (
   `id` INT NOT NULL AUTO_INCREMENT,
@@ -23,8 +17,6 @@ AUTO_INCREMENT = 3
 DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_unicode_ci;
 
--- Table manufacturers
-
 CREATE TABLE IF NOT EXISTS `bez_raznici`.`manufacturers` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(50) NOT NULL,
@@ -33,8 +25,6 @@ ENGINE = InnoDB
 AUTO_INCREMENT = 7
 DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_unicode_ci;
-
--- Table orders
 
 CREATE TABLE IF NOT EXISTS `bez_raznici`.`orders` (
   `id` INT NOT NULL AUTO_INCREMENT,
@@ -62,8 +52,6 @@ AUTO_INCREMENT = 1000000
 DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_unicode_ci;
 
--- Table orderstatus
-
 CREATE TABLE IF NOT EXISTS `bez_raznici`.`orderstatus` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(20) NOT NULL,
@@ -72,8 +60,6 @@ ENGINE = InnoDB
 AUTO_INCREMENT = 3
 DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_unicode_ci;
-
--- Table prodorders
 
 CREATE TABLE IF NOT EXISTS `bez_raznici`.`prodorders` (
   `id` INT NOT NULL AUTO_INCREMENT,
@@ -94,8 +80,6 @@ ENGINE = InnoDB
 AUTO_INCREMENT = 1000000
 DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_unicode_ci;
-
--- Table products
 
 CREATE TABLE IF NOT EXISTS `bez_raznici`.`products` (
   `id` INT NOT NULL AUTO_INCREMENT,
@@ -128,8 +112,6 @@ AUTO_INCREMENT = 32
 DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_unicode_ci;
 
--- Table pvz
-
 CREATE TABLE IF NOT EXISTS `bez_raznici`.`pvz` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `postcode` CHAR(6) NOT NULL,
@@ -142,8 +124,6 @@ AUTO_INCREMENT = 37
 DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_unicode_ci;
 
--- Table roles
-
 CREATE TABLE IF NOT EXISTS `bez_raznici`.`roles` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(30) NOT NULL,
@@ -153,8 +133,6 @@ AUTO_INCREMENT = 4
 DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_unicode_ci;
 
--- Table suppliers
-
 CREATE TABLE IF NOT EXISTS `bez_raznici`.`suppliers` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(50) NOT NULL,
@@ -163,8 +141,6 @@ ENGINE = InnoDB
 AUTO_INCREMENT = 3
 DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_unicode_ci;
-
--- Table users
 
 CREATE TABLE IF NOT EXISTS `bez_raznici`.`users` (
   `id` INT NOT NULL AUTO_INCREMENT,
